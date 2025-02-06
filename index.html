@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн Щоденник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Мій Онлайн Щоденник</h1>
+    </header>
+
+    <main>
+        <section id="entry-form">
+            <h2>Новий Запис</h2>
+            <textarea id="entry-text" placeholder="Напишіть тут..."></textarea>
+            <input type="text" id="entry-tags" placeholder="Теги (розділені комами)">
+            <button id="save-entry">Зберегти Запис</button>
+        </section>
+
+        <section id="entries">
+            <h2>Записи</h2>
+            <div id="entry-list">
+                <!-- Записи будуть додаватися сюди за допомогою JavaScript -->
+            </div>
+        </section>
+
+        <section id="tag-filter">
+            <h2>Фільтрувати за тегами</h2>
+            <input type="text" id="filter-tags" placeholder="Введіть теги для фільтрації (розділені комами)">
+            <button id="filter-button">Фільтрувати</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Мій Щоденник</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
